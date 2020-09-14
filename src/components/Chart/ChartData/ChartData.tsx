@@ -7,14 +7,6 @@ import {
 
 import './ChartData.less';
 
-export const ChartLegend = memo(function ChartLegend(): ReactElement {
-  return (
-    <div className="ChartLegend">
-      Tutaj berdzie lenenda
-    </div>
-  )
-});
-
 function dateFormat(item : any) {
   return moment(item).format('DD. MMM \'YY');
 }
