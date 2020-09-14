@@ -1,0 +1,25 @@
+.ChartFilters {
+  span {
+    &:after {
+      content: '';
+      margin-right: 20px;
+    }
+    
+    &:last-child {
+      &:after {
+        content: none;
+      }
+    }
+
+    & > b {
+      &:after {
+        content: ', '
+      }
+      &:last-child {
+        &:after {
+          content: none;
+        }
+      }
+    }
+  }
+}

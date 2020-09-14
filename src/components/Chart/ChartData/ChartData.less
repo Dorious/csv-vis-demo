@@ -1,0 +1,51 @@
+@label-margin: 3em;
+
+.ChartData {
+  min-height: 300px;
+  min-width: 320px;
+  display: flex;
+  align-items: flex-end;
+
+  &-content {
+    position: absolute;
+    top: 0;
+    bottom: 2rem;
+    left: 3em;
+    right: 3em;
+  }
+
+  &-label {
+    &-left, &-right {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      & > span {
+        transform: rotate(-90deg);
+      }
+    }
+
+    &-left {
+      left: -@label-margin;
+    }
+
+    &-right {
+      right: 0;
+      margin-right: -@label-margin;
+      text-align: right;
+    }
+  }
+
+  &-render {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+.ChartLegend {
+  text-align: center;
+  padding: 0 0 0.5rem;
+  width: 100%;
+}

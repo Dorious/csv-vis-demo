@@ -1,0 +1,66 @@
+@import '~antd/dist/antd.less';
+@import './_variables.less';
+
+.App {
+  font-size: @base-font-size;
+  min-height: 100vh;
+  max-height: 100%;
+  position: relative;
+  padding: @content-padding;
+  display: flex;
+  flex-direction: column;
+  max-width: 1980px;
+  margin: 0 auto;
+
+  &-header {
+    h1 {
+      margin: 0 0 @content-padding;
+    }
+  }
+
+  &-content {
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden; 
+
+    h2 {
+      margin: 0;
+    }
+
+    &-left, &-right {
+      border: @border;
+      padding: @content-padding;
+      overflow: auto;
+    }
+
+    &-left {
+      margin-right: @content-padding;
+      background: @filter-background;
+      width: 20rem;
+      min-width: 20rem;
+      max-width: 20rem;
+    }
+
+    &-right {
+      flex-grow: 1;
+    }
+  }
+
+  &-loading {
+    position: absolute;
+    z-index: 666;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,255,255,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 30%;
+
+    .ant-spin-dot {
+      font-size: 8rem;
+    }
+  }
+}
