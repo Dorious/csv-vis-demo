@@ -31,7 +31,6 @@
     "overmind-react": "^26.0.2",
     "query-string": "^6.13.1",
     "react": "^16.13.1",
-    "react-charts": "^2.0.0-beta.7",
     "react-dom": "^16.13.1",
     "react-resizable": "^1.11.0",
     "react-router": "^5.2.0",
