@@ -82,12 +82,8 @@ export function loadSeries(csv : string | null, filters: ChartFilters, callback 
         }
 
         const value = parseInt(record[columns[label]]) || 0;
-
-        if(data[time][label]) {
-          data[time][label] += value;
-        } else {
-          data[time][label] = value;
-        }
+        
+        data[time][label] = (+data[time][label] || 0) + value;
       }
       
       i++;
